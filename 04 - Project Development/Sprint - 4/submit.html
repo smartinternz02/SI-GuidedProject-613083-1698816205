@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .top-right a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('static/images/submit.png'); background-size: cover;">
+
+  <header>
+    <nav>
+      <div class="top-right">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="predict.html">Predictor</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="submission" style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-top: 100px; background-color: rgba(0, 0, 0, 0.7);">
+
+    <h1 style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; font-size: 25px; font-family: 'Times New Roman', Times, serif;">Based on your input :{{result}}
+    </h1>
+    </section>
+<footer>
+
+</footer>
+</body>
+</html>

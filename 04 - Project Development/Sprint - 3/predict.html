@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictor Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .top-right a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 100px;
+      max-width: 800px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    form div {
+      margin-bottom: 20px;
+    }
+
+    form label {
+      margin-bottom: 5px;
+      display: block;
+      font-weight: bold;
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      grid-column: span 2;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="top-right">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="predict.html">Predictor</a>
+      </div>
+    </nav>
+  </header>
+
+  <form action="/predict" method="post">
+    <div>
+      <label for="administrative">Administrative</label>
+      <input type="text" id="administrative" name="administrative" required>
+    </div>
+
+    <div>
+      <label for="informational">Informational</label>
+      <input type="text" id="informational" name="informational" required>
+    </div>
+
+    <div>
+      <label for="productRelated">ProductRelated</label>
+      <input type="text" id="productRelated" name="productRelated" required>
+    </div>
+
+    <div>
+      <label for="bounceRates">Bounce Rates</label>
+      <input type="text" id="bounceRates" name="bounceRates" required>
+    </div>
+
+    <div>
+      <label for="pageValues">PageValues</label>
+      <input type="text" id="pageValues" name="pageValues" required>
+    </div>
+
+    <div>
+      <label for="month">Month</label>
+      <input type="text" id="month" name="month" required>
+    </div>
+
+    <div>
+      <label for="browser">Browser</label>
+      <input type="text" id="browser" name="browser" required>
+    </div>
+
+    <div>
+      <label for="trafficType">Traffic Type</label>
+      <input type="text" id="trafficType" name="trafficType" required>
+    </div>
+
+    <div>
+      <label for="weekend">Weekend</label>
+      <input type="text" id="weekend" name="weekend" required>
+    </div>
+
+    <div>
+      <label for="adminDuration">Administrative Duration</label>
+      <input type="text" id="adminDuration" name="adminDuration" required>
+    </div>
+
+    <div>
+      <label for="infoDuration">Informational Duration</label>
+      <input type="text" id="infoDuration" name="infoDuration" required>
+    </div>
+
+    <div>
+      <label for="productDuration">ProductRelated Duration</label>
+      <input type="text" id="productDuration" name="productDuration" required>
+    </div>
+
+    <div>
+      <label for="exitRates">ExitRates</label>
+      <input type="text" id="exitRates" name="exitRates" required>
+    </div>
+
+    <div>
+      <label for="specialDay">SpecialDay</label>
+      <input type="text" id="specialDay" name="specialDay" required>
+    </div>
+
+    <div>
+      <label for="os">Operating Systems</label>
+      <input type="text" id="os" name="os" required>
+    </div>
+
+    <div>
+      <label for="region">Region</label>
+      <input type="text" id="region" name="region" required>
+    </div>
+
+    <div>
+      <label for="visitorType">Visitor Type</label>
+      <input type="text" id="visitorType" name="visitorType" required>
+    </div>
+
+    <button type="submit">Predict</button>
+  </form>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
+
+
+
+
