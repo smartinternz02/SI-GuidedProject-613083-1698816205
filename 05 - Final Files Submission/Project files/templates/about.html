@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .top-right a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        #about {
+            padding-top: 200px;
+            padding-right:60px;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        #about img {
+            max-width: 45%;
+            height: auto;
+            float: left; /* Float the image to the left */
+            margin-right: 20px; /* Add some margin between text and image */
+            margin-bottom: 20px; /* Add margin to the bottom of the image */
+            padding-left:50px;
+        }
+
+        #about div {
+            max-width: 600px; /* Adjust the width as needed */
+            margin-left: auto;
+        }
+
+        #about h2 {
+            color: #000;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            color: rgba(255, 255, 255, 0.9);
+            /* Slightly dark text color */
+            color: #000;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="top-right">
+                <a href="home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="predict.html">Predictor</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+
+        <!-- Include the image on the left side -->
+        <img src="static/images/about.png" alt="Online Shopping Image">
+
+        <div>
+            <h2>About Us</h2>
+            <hr>
+            <p>
+                Welcome to Online Shoppers Intention Prediction, your trusted guide for understanding and predicting online
+                shopping behaviors. I am passionate about unraveling the complexities of online consumer intentions. Using
+                cutting-edge technology and data-driven insights, I strive to provide valuable predictions that empower both
+                businesses and shoppers.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
+
+
